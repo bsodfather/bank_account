@@ -51,7 +51,7 @@ class LimitArgs:
                             f"Function argument '{key}' max value must be <= {self.max_value}"
                     )
                 elif self.mode == "clip":
-                    kwargs[key] == self.max_value
+                    kwargs[key] = self.max_value
 
         return kwargs
 
